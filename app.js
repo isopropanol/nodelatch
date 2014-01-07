@@ -31,14 +31,18 @@ app.get('/', function(req,res){
 app.post('/email', function(req, res) { 
 
 	var fromMail = req.body.email; 
-	console.log(fromMail);
+
+	console.log("----sendgrid username");
+	console.log(process.env.SENDGRID_USERNAME);
+
 	sendgrid.send({
 		to: 'shogun042@gmail.com',
 		from: fromMail,
-		subject: 'Hello World',
+		subject: 'Hello World Latch',
 		text: 'Sending email with NodeJS through SendGrid!'
 	}, function(err, json) {
 		if (err) { 
+			console.log("i'm an error");
 			return console.error(err); 
 		}
 		console.log(json);

@@ -27,6 +27,25 @@ app.get('/', function(req,res){
 		{title:'Latch'});
 });
 
+app.post('/email', function(req, res) { 
+
+	var fromMail = req.params.email; 
+
+	sendgrid.send({
+		to: 'contact@getlatch.com',
+		from: fromMail,
+		subject: 'Hello World',
+		text: 'Sending email with NodeJS through SendGrid!'
+	}, function(err, json) {
+		if (err) { 
+			return console.error(err); 
+		}
+		console.log(json);
+	});
+
+
+});
+
 var port = process.env.PORT || 3001;
 
 app.listen(port, function() {

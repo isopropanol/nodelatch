@@ -32,17 +32,18 @@ app.post('/email', function(req, res) {
 
 	var fromMail = req.body.email; 
 	console.log(fromMail);
-	// sendgrid.send({
-	// 	to: 'contact@getlatch.com',
-	// 	from: fromMail,
-	// 	subject: 'Hello World',
-	// 	text: 'Sending email with NodeJS through SendGrid!'
-	// }, function(err, json) {
-	// 	if (err) { 
-	// 		return console.error(err); 
-	// 	}
-	// 	console.log(json);
-	// });
+	sendgrid.send({
+		to: 'shogun042@gmail.com',
+		from: fromMail,
+		subject: 'Hello World',
+		text: 'Sending email with NodeJS through SendGrid!'
+	}, function(err, json) {
+		if (err) { 
+			return console.error(err); 
+		}
+		console.log(json);
+		res.send("it worked!");
+	});
 
 
 });

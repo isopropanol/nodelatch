@@ -31,17 +31,18 @@ app.get('/', function(req,res){
 app.post('/email', function(req, res) { 
 
 	var fromMail = req.body.email; 
-	sendgrid.send({
-		to: 'contact@getlatch.com',
-		from: fromMail,
-		subject: 'Hello World',
-		text: 'Sending email with NodeJS through SendGrid!'
-	}, function(err, json) {
-		if (err) { 
-			return console.error(err); 
-		}
-		console.log(json);
-	});
+	console.log(fromMail);
+	// sendgrid.send({
+	// 	to: 'contact@getlatch.com',
+	// 	from: fromMail,
+	// 	subject: 'Hello World',
+	// 	text: 'Sending email with NodeJS through SendGrid!'
+	// }, function(err, json) {
+	// 	if (err) { 
+	// 		return console.error(err); 
+	// 	}
+	// 	console.log(json);
+	// });
 
 
 });

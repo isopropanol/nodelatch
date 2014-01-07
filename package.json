@@ -1,0 +1,15 @@
+{
+  "name": "Latch",
+  "version": "0.0.1",
+  "private": "true",
+  "dependencies": {
+    "express": "3.0.0alpha4",
+    "jade": "*",
+    "stylus": "*",
+    "nib": "*"
+  },
+   "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  }
+}

@@ -6,21 +6,11 @@
     "express": "3.0.0alpha4",
     "jade": "*",
     "stylus": "*",
-    "nib": "*"
+    "nib": "*",
+    "sendgrid": "0.3.0-rc.1.7"
   },
    "engines": {
     "node": "0.10.x",
     "npm": "1.2.x"
-  }
-}
-{
-  "name": "node-sendgrid-example",
-  "version": "0.0.1",
-  "dependencies": {
-    "express": "3.1.x",
-    "sendgrid": "0.3.0-rc.1.7"
-  },
-  "engines": {
-    "node": ">= 0.4.7"
   }
 }

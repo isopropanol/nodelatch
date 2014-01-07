@@ -12,10 +12,10 @@ block content
 					h2.blog-description Multi-family residences go keyless.
 
 					.signup-blurb Signup to learn more:
-					.input-container
+					form.input-container
 						input#emailaddress(placeholder="email address", type="email")
 						a.btn.btn-primary#submitEmail Go
-					script
+					script(type="text/javascript")
 						$(function(){
 							$('body').delegate('#submitEmail','click',function(e){
 								e.preventDefault();

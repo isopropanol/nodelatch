@@ -9,6 +9,8 @@ $(function(){
 			success:function(){
 				console.log('success');
 				$('#emailaddress').val('');
+				$('.input-container').hide();
+				$('.signup-blurb').hide();
 				$('#thanksBro').show();
 			}
 			})
@@ -25,6 +27,8 @@ $(function(){
 			success:function(){
 				console.log('success');
 				$('#emailaddress').val('');
+				$('.input-container').hide();
+				$('.signup-blurb').hide();
 				$('#thanksBro').show();
 			}
 			})

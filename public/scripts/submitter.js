@@ -8,6 +8,8 @@ $(function(){
 			data:{email:emailaddress},
 			success:function(){
 				console.log('success');
+				$('#emailaddress').val('');
+				$('#thanksBro').show();
 			}
 			})
 		})
@@ -22,6 +24,8 @@ $(function(){
 			data:{email:emailaddress},
 			success:function(){
 				console.log('success');
+				$('#emailaddress').val('');
+				$('#thanksBro').show();
 			}
 			})
 		}

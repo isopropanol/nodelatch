@@ -2,9 +2,10 @@ extend ./layout
 block content
 	header.site-head.landing(style="background-image: url('/images/skylineblur2.jpg');")
 		nav.landing-nav
+				a.active(href="/") Home
 				a(href='/') About Us 
 				a(href='http://blog.getlatch.com/') Blog
-			.vertical
+		.vertical
 				.inner
 					a.blog-logo(href='/')
 						img(src='/images/logo3.png', alt='Latch Logo')
@@ -16,6 +17,9 @@ block content
 						input#emailaddress(placeholder="email address", type="email")
 						a.btn.btn-primary#submitEmail
 							span.glyphicon.glyphicon-chevron-right
+					
+
+
 					script(type="text/javascript")
 						$(function(){
 							$('body').delegate('#submitEmail','click',function(e){

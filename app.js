@@ -36,7 +36,7 @@ app.post('/email', function(req, res) {
 		to: 'contact@getlatch.com',
 		from: fromMail,
 		subject: 'Demo request',
-		text: fromMail + "has signed up for Latch. Go bug them"
+		text: fromMail + " has signed up for Latch. Go bug them"
 	}, function(err, json) {
 		if (err) { 
 			console.log("i'm an error");

@@ -1,4 +1,6 @@
 extend ./layout
+block appendScripts
+	script(type="text/javascript" src="/scripts/submitter.js")
 block content
 	header.site-head.landing(style="background-image: url('/images/skylineblur2.jpg');")
 		nav.landing-nav
@@ -7,7 +9,7 @@ block content
 				a(href='http://blog.getlatch.com/') Blog
 		.vertical
 				.inner
-					a.blog-logo(href='/')
+					.blog-logo
 						img(src='/images/logo3.png', alt='Latch Logo')
 					//- h1.blog-title Latch
 					h2.blog-description Multi-family residences go keyless.
@@ -17,21 +19,4 @@ block content
 						input#emailaddress(placeholder="email address", type="email")
 						a.btn.btn-primary#submitEmail
 							span.glyphicon.glyphicon-chevron-right
-					
-
-
-					script(type="text/javascript")
-						$(function(){
-							$('body').delegate('#submitEmail','click',function(e){
-								e.preventDefault();
-								var emailaddress = $('#emailaddress').val();
-								$.ajax({
-									method:'post',
-									url:'/email',
-									data:{email:emailaddress},
-									success:function(){
-										console.log('success');
-									}
-									})
-								})
-						})
+						

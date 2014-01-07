@@ -32,14 +32,11 @@ app.post('/email', function(req, res) {
 
 	var fromMail = req.body.email; 
 
-	console.log("----sendgrid username");
-	console.log(process.env.SENDGRID_USERNAME);
-
 	sendgrid.send({
-		to: 'shogun042@gmail.com',
+		to: 'contact@getlatch.com',
 		from: fromMail,
-		subject: 'Hello World Latch',
-		text: 'Sending email with NodeJS through SendGrid!'
+		subject: 'Demo request',
+		text: fromMail + "has signed up for Latch. Go bug them";
 	}, function(err, json) {
 		if (err) { 
 			console.log("i'm an error");

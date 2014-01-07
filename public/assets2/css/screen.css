@@ -421,7 +421,7 @@ margin on the iframe, cause it breaks stuff. */
 
 .blog-description {
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     line-height: 1.5em;
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
@@ -827,8 +827,8 @@ margin on the iframe, cause it breaks stuff. */
     }
 
     .blog-description {
-        font-size: 1.7rem;
-        line-height: 1.5em;
+        font-size: 2.7rem;
+        line-height: 2.5em;
     }
     .landing-nav a{
     font-size:1.7rem;
@@ -902,7 +902,7 @@ margin on the iframe, cause it breaks stuff. */
     }
 
     .blog-description {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     .landing-nav a{
     font-size:1.5rem;

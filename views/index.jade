@@ -10,3 +10,23 @@ block content
 						img(src='/images/logo3.png', alt='Latch Logo')
 					//- h1.blog-title Latch
 					h2.blog-description Multi-family residences go keyless.
+
+					.signup-blurb Signup to learn more:
+					.input-container
+						input#emailaddress(placeholder="email address", type="email")
+						a.btn.btn-primary#submitEmail Go
+					script
+						$(function(){
+							$('body').delegate('#submitEmail','click',function(e){
+								e.preventDefault();
+								var emailaddress = $('#emailaddress').val();
+								$.ajax({
+									method:'post',
+									url:'/email',
+									data:{'email':emailaddress},
+									success:function(){
+										console.log('success');
+									}
+									})
+								})
+						})

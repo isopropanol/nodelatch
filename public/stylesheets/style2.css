@@ -1,31 +1,25 @@
 /*
  * Import nib
  */
-#tempload {
-  z-index: 6;
-  width: 640px;
-  height: 360px;
+.signup-blurb {
+  font-size: 1rem;
 }
-h1 {
-  font-size: 65px;
-  color: #fff;
+.input-container input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  z-index: 50;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 0;
+  width: auto;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  border: 1px solid #bbb;
 }
-h2 {
-  color: #fff;
-  letter-spacing: 6.5;
-}
-.d3-slider-handle,
-.d3-slider {
-  cursor: pointer;
-}
-.forScroll {
-  min-height: 100%;
-  display: none;
-}
-.forScroll .scrollpoint {
-  height: 3%;
-  border: 1px solid #000;
-}
-.forScroll.last {
-  height: 100%;
+.input-container .btn {
+  margin-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  height: 30px;
 }

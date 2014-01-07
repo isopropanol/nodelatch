@@ -387,11 +387,14 @@ margin on the iframe, cause it breaks stuff. */
     padding:20px 30px;
 }
 .landing-nav a{
-    font-size:17px;
+    font-size:1.8rem;
     color:white;
-    margin-right:20px;
+    margin-right:2em;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+}
+.landing-nav a:hover{
+    color:#e0e0e0;
 }
 
 .blog-logo {
@@ -401,7 +404,7 @@ margin on the iframe, cause it breaks stuff. */
 /* Yo-logo. Yolo-go. Upload one in ghost/settings/ */
 .blog-logo img {
     display: block;
-    max-height: 100px;
+    max-height: 200px;
     width: auto;
     margin: 0 auto;
     line-height: 0;
@@ -421,7 +424,7 @@ margin on the iframe, cause it breaks stuff. */
     font-size: 1.8rem;
     line-height: 1.5em;
     font-weight: 300;
-    font-family:  'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: 0;
 }
 
@@ -815,6 +818,7 @@ margin on the iframe, cause it breaks stuff. */
         height: auto;
         min-height: 240px;
         padding: 15% 0;
+        height:100%;
     }
 
     .blog-title {
@@ -825,6 +829,9 @@ margin on the iframe, cause it breaks stuff. */
     .blog-description {
         font-size: 1.7rem;
         line-height: 1.5em;
+    }
+    .landing-nav a{
+    font-size:1.7rem;
     }
 
     .post {
@@ -887,6 +894,7 @@ margin on the iframe, cause it breaks stuff. */
 
     .site-head {
         padding: 10% 0;
+        height:100%;
     }
 
     .blog-title {
@@ -895,6 +903,9 @@ margin on the iframe, cause it breaks stuff. */
 
     .blog-description {
         font-size: 1.5rem;
+    }
+    .landing-nav a{
+    font-size:1.5rem;
     }
 
 

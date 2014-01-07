@@ -1,12 +1,12 @@
 extend ./layout
 block content
-	header.site-head.landing(style="background-image: url('/images/skylineblur.jpg');")
+	header.site-head.landing(style="background-image: url('/images/skylineblur2.jpg');")
 		nav.landing-nav
 				a(href='/') About Us 
 				a(href='http://blog.getlatch.com/') Blog
 			.vertical
 				.inner
-					//- a.blog-logo(href='{{@blog.url}}')
-					//- 	img(src='{{@blog.logo}}', alt='Blog Logo')
-					h1.blog-title Latch
+					a.blog-logo(href='/')
+						img(src='/images/logo3.png', alt='Latch Logo')
+					//- h1.blog-title Latch
 					h2.blog-description Multi-family residences go keyless.

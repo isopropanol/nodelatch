@@ -384,17 +384,21 @@ margin on the iframe, cause it breaks stuff. */
     position:absolute;
     top:0;
     left:0;
-    padding:20px 30px;
+    padding:20px 20px;
 }
 .landing-nav a{
+    padding:0.5em 1em;
     font-size:1.8rem;
     color:white;
-    margin-right:2em;
+
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 }
+.landing-nav a.active{
+    background:rgba(150,150,150,0.3);
+}
 .landing-nav a:hover{
-    color:#e0e0e0;
+    background:rgba(150,150,150,0.5);
 }
 
 .blog-logo {

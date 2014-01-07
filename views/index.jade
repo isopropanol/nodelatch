@@ -23,7 +23,7 @@ block content
 								$.ajax({
 									method:'post',
 									url:'/email',
-									data:{'email':emailaddress},
+									data:{email:emailaddress},
 									success:function(){
 										console.log('success');
 									}

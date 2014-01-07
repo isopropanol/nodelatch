@@ -20,6 +20,7 @@ app.use(stylus.middleware(
 	src: __dirname+'/public',
 	compile:compile
 }));
+app.use(express.bodyParser());
 app.use(express.static(__dirname+'/public'));
 
 app.get('/', function(req,res){
@@ -29,8 +30,7 @@ app.get('/', function(req,res){
 
 app.post('/email', function(req, res) { 
 
-	var fromMail = req.params.email; 
-
+	var fromMail = req.body.email; 
 	sendgrid.send({
 		to: 'contact@getlatch.com',
 		from: fromMail,

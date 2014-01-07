@@ -14,7 +14,8 @@ block content
 					.signup-blurb Signup to learn more:
 					form.input-container
 						input#emailaddress(placeholder="email address", type="email")
-						a.btn.btn-primary#submitEmail Go
+						a.btn.btn-primary#submitEmail
+							span.glyphicon.glyphicon-chevron-right
 					script(type="text/javascript")
 						$(function(){
 							$('body').delegate('#submitEmail','click',function(e){

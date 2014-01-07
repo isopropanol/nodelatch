@@ -2,6 +2,12 @@ var express = require('express')
 	, stylus = require('stylus')
 	, nib = require('nib');
 var app = express();
+
+var sendgrid  = require('sendgrid')(
+  process.env.SENDGRID_USERNAME,
+  process.env.SENDGRID_PASSWORD
+);
+
 function compile(str,path){
 	return stylus(str)
 		.set('filename',path)

@@ -393,6 +393,7 @@ margin on the iframe, cause it breaks stuff. */
 
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
 }
 .landing-nav a.active{
     background:rgba(150,150,150,0.3);

@@ -832,6 +832,7 @@ margin on the iframe, cause it breaks stuff. */
     }
 
     .blog-description {
+        margin-top: 2rem;
         font-size: 2.7rem;
         line-height: 2.5em;
     }
@@ -907,6 +908,7 @@ margin on the iframe, cause it breaks stuff. */
     }
 
     .blog-description {
+        margin-top:2rem;
         font-size: 1.8rem;
     }
     .landing-nav a{

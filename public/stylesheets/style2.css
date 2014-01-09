@@ -2,7 +2,9 @@
  * Import nib
  */
 .signup-blurb {
-  font-size: 1rem;
+  font-size: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
 }
 .input-container input {
   border-top-right-radius: 0;

@@ -30,10 +30,11 @@
 .overlay {
   height: 100%;
   width: 100%;
-  opacity: 0.3;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-  filter: alpha(opacity=30);
+  opacity: 0.4;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter: alpha(opacity=40);
   position: absolute;
+  top: 0;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.54, #46ffb2), color-stop(1, #29f894));
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.54, #46ffb2), color-stop(1, #29f894));
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.54, #46ffb2), color-stop(1, #29f894));

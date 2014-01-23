@@ -6,6 +6,10 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
 }
+div {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
 .input-container input {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;

@@ -1,0 +1,16 @@
+extend ./layout
+block appendScripts
+block content
+	header.site-head.landing(style="background-image: url('/images/skylineblur2.jpg');")
+		.overlay
+		nav.landing-nav
+				a(href="/") Home
+				a.active(href='/aboutus') About Us 
+				a(href='http://blog.getlatch.com/') Blog
+		.vertical
+				.inner
+					.alert.alert-info.description#thanksBro(style="margin-left:auto;margin-right:auto;background:rgba(150,150,150,0.8);color:rgb(220,220,220);border:none; font-size:2rem;	")
+						img(src="/images/lockB.png" style="width:128px;height:128px;margin-left:-40px;")
+						br
+						| Latch is a technology company committed to helping architects, real estate companies and property managers create the intelligent building of the future. Leveraging the smart devices we carry in our pockets, Latch aims to build environments that adapt and respond to guests, tenants, and managers of every building.
+						

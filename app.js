@@ -27,6 +27,10 @@ app.get('/', function(req,res){
 	res.render('index',
 		{title:'Latch'});
 });
+app.get('/aboutus', function(req,res){
+	res.render('aboutus',
+		{title:'Latch'});
+});
 
 app.post('/email', function(req, res) { 
 

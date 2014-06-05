@@ -2,24 +2,30 @@ extend ./layout
 block appendScripts
 	script(type="text/javascript" src="/scripts/submitter.js")
 block content
-	header.site-head.landing(style="background-image: url('/images/skylineblur2.jpg');")
-		//- .overlay
-		nav.landing-nav
+	header.site-head.landing(style="background-image: url('/images/skylineblur3.jpg');")
+		.overlay
+		//- nav.landing-nav
 				a.active(href="/") Home
 				a(href='/aboutus') About Us 
 				a(href='http://blog.getlatch.com/') Blog
 		.vertical
 				.inner
 					.blog-logo
-						img(src='/images/logo3.png', alt='Latch Logo')
+						img(src='/images/latchLogoTeal2.png', alt='Latch Logo', style="opacity:0.8;")
 					//- h1.blog-title Latch
-					h2.blog-description Multi-family residences go keyless.
+					h2.blog-description
+						strong Sshh! 
+						| We're staying stealthy for now.
 
-					.signup-blurb Signup to learn more:
-					form.input-container
-						input#emailaddress(placeholder="email address", type="email")
-						a.btn.btn-primary#submitEmail
-							span.glyphicon.glyphicon-chevron-right
-					.alert.alert-info#thanksBro(style="display:none;width:20rem;margin-left:auto;margin-right:auto;background:rgba(150,150,150,0.5);color:rgb(220,220,220);border:none;")
-						| Thanks!
+					p.signup-blurb.larger
+						| Latch builds products for where the internet of things meets the enterprise. We’re focused on delivering contextually-based access awareness and control products for leading customers around the world.
+
+					p.signup-blurb We’re always excited to chat. Drop us a line 
+						a(href="mailto:contact@getlatch.com?Subject=Latch" target="_top") contact@getlatch.com
+					//- form.input-container
+					//- 	input#emailaddress(placeholder="email address", type="email")
+					//- 	a.btn.btn-primary#submitEmail
+					//- 		span.glyphicon.glyphicon-chevron-right
+					//- .alert.alert-info#thanksBro(style="display:none;width:20rem;margin-left:auto;margin-right:auto;background:rgba(150,150,150,0.5);color:rgb(220,220,220);border:none;")
+					//- 	| Thanks!
 						
